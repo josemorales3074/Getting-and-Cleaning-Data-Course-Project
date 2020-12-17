@@ -31,12 +31,17 @@ The file `run_analysis.R` script was coded focusing on the data preparation and 
 
 **Step 4. Appropriately label the data set with descriptive variable names**
 - The `code` column in `fullDataset` was renamed as `activities`
-- Occurrences of Acc in column's name were replaced by Accelerometer
-- Occurrences of BodyBody in column's name were replaced by Body
-- Occurrences of Gyro in column's name were replaced by Gyroscope
-- Occurrences of Mag in column's name were replaced by Magnitude
-- Occurrences beginning with character f in column's name were replaced by Frequency
-- Occurrences beginning with character t in column's name were replaced by Time
+- Occurrences of `Acc` in column's name were replaced by `Accelerometer`
+- Occurrences of `BodyBody` in column's name were replaced by `Body`
+- Occurrences of `Gyro` in column's name were replaced by `Gyroscope`
+- Occurrences of `Mag` in column's name were replaced by `Magnitude`
+- Occurrences beginning with character `f` in column's name were replaced by `Frequency`
+- Occurrences beginning with character `t` in column's name were replaced by `Time`
+- Occurrences of `tBody` in column's name were replaced by `TimeBody` 
+- Occurrences of `-mean()` in column's name were replaced by `Mean` 
+- Occurrences of `-std()` in column's name were replaced by `STD`
+- Occurrences of `-freq()` in column's name were replaced by `Frequency` 
+- Occurrences of `angle` and `gravity` in column's name just replaced with the capitalized word.  
 
 **Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject**
 - `resultDataset` resulted by sumarizing `fullDataset` taking the means of each variable for each activity and each subject, after groupped by subject and activity:  88 columns, 180 rows
